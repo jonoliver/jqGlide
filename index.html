@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>jqGlide</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<style>
+		body{ overflow: hidden; }
+		#element1,
+		#element2,
+		#element3 {
+			position: absolute;
+			background-color: red;
+			height: 50px;
+			width: 50px;
+			top: 50%;
+			left: 50%;
+		}
+		#element2 {
+			background-color: blue;
+		}
+		#element3 {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="element1" class="glide"></div>
+	<div id="element2" class="glide"></div>
+	<div id="element3" class="glide"></div>
+	<script>!window.jQuery && document.write('<script src="lib/jquery.min.js"><\/script>')</script>
+	<script src="jquery.glide.js"></script>
+	<script>
+		$('.glide').glide({
+			randomStart: true, 
+			clickToggle: true
+		});
+	</script>
+</body>
+</html>
