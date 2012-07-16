@@ -15,8 +15,10 @@ $(".some_elements").glide();
 with options:
 ```javascript
 $(".some_elements").glide({
-	randomStart: true, 
-	clickToggle: true
+	randomStart: true, // element automatically starts moving in a random direction
+	clickToggle: true // click anywhere on the window to stop/start element moving
 });
 ```	
+
+
 
